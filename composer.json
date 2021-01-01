@@ -1,6 +1,6 @@
 {
-    "name": "lakobre/common",
-    "description": "Common files for Lakobre.",
+    "name": "lakobre/redistributable",
+    "description": "Redistributable files for Lakobre.",
     "type": "library",
     "license": "propriatery",
     "authors": [
@@ -11,12 +11,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "Lakobre\\Common\\": "src/"
+            "Lakobre\\Redistributable\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Lakobre\\Common\\Tests\\": "tests/"
+            "Lakobre\\Redistributable\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable",

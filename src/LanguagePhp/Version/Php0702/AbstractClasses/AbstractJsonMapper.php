@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Lakobre\Common\LanguagePhp\Version\Php0702\AbstractClasses;
+namespace Lakobre\Redistributable\LanguagePhp\Version\Php0702\AbstractClasses;
 
 use DateTime;
 use Exception;
@@ -10,7 +10,7 @@ use Exception;
 /**
  * Class AbstractJsonMapper
  *
- * @package Lakobre\Common\LanguagePhp\Version\Php0702\AbstractClasses
+ * @package Lakobre\Redistributable\LanguagePhp\Version\Php0702\AbstractClasses
  */
 abstract class AbstractJsonMapper
 {
