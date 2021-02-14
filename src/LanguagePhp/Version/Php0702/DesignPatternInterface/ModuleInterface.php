@@ -25,4 +25,9 @@ interface ModuleInterface
      * @return string
      */
     public function getValidatorName(): string;
+
+    /**
+     * @return string
+     */
+    public function getRenderName(): string;
 }
