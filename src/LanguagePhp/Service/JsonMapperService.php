@@ -16,7 +16,7 @@ class JsonMapperService
      *
      * @return ImmutableObjectInterface|null
      */
-    protected function fromJsonObject(?object $jsonObject, string $jsonMapperClassName): ?ImmutableObjectInterface
+    public function fromJsonObject(?object $jsonObject, string $jsonMapperClassName): ?ImmutableObjectInterface
     {
         if (empty($jsonObject)) {
             return null;
@@ -31,7 +31,7 @@ class JsonMapperService
      *
      * @return object|null
      */
-    protected function toJsonObject(?ImmutableObjectInterface $object, string $jsonMapperClassName): ?object
+    public function toJsonObject(?ImmutableObjectInterface $object, string $jsonMapperClassName): ?object
     {
         if (empty($object)) {
             return null;
@@ -46,7 +46,7 @@ class JsonMapperService
      *
      * @return object[]|null
      */
-    protected function fromJsonObjectArray(?array $jsonObjectArray, string $jsonMapperClassName): ?array
+    public function fromJsonObjectArray(?array $jsonObjectArray, string $jsonMapperClassName): ?array
     {
         if (empty($jsonObjectArray)) {
             return null;
@@ -66,7 +66,7 @@ class JsonMapperService
      *
      * @return object[]|null
      */
-    protected function toJsonObjectArray(?array $objectArray, string $jsonMapperClassName): ?array
+    public function toJsonObjectArray(?array $objectArray, string $jsonMapperClassName): ?array
     {
         if (empty($objectArray)) {
             return null;
@@ -87,7 +87,7 @@ class JsonMapperService
      *
      * @return DateTime|null
      */
-    protected function dateTimeFromJson(?string $jsonValue): ?DateTime
+    public function dateTimeFromJson(?string $jsonValue): ?DateTime
     {
         return ($jsonValue === null) ? null : new DateTime($jsonValue);
     }
@@ -97,7 +97,7 @@ class JsonMapperService
      *
      * @return string|null
      */
-    protected function dateTimeToJson(?DateTime $dateTime): ?string
+    public function dateTimeToJson(?DateTime $dateTime): ?string
     {
         return ($dateTime === null) ? null : $dateTime->format('Y-m-d H:i:s');
     }
