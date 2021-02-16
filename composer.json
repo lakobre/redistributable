@@ -19,7 +19,7 @@
             "Lakobre\\Redistributable\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require-dev": {
         "symfony/var-dumper": "^5.2"
     }
