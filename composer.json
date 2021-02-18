@@ -3,6 +3,7 @@
     "description": "Redistributable files for Lakobre.",
     "type": "library",
     "license": "propriatery",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Constup",
@@ -19,7 +20,7 @@
             "Lakobre\\Redistributable\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require-dev": {
         "symfony/var-dumper": "^5.2"
     }
