@@ -3,7 +3,6 @@
     "description": "Redistributable files for Lakobre.",
     "type": "library",
     "license": "propriatery",
-    "version": "1.0.0",
     "authors": [
         {
             "name": "Constup",
