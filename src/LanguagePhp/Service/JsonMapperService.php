@@ -22,7 +22,7 @@ class JsonMapperService
             return null;
         }
 
-        return (new $jsonMapperClassName())->fromJson($jsonObject);
+        return (new $jsonMapperClassName($this))->fromJson($jsonObject);
     }
 
     /**
@@ -37,7 +37,7 @@ class JsonMapperService
             return null;
         }
 
-        return (new $jsonMapperClassName())->toJson($object);
+        return (new $jsonMapperClassName($this))->toJson($object);
     }
 
     /**
@@ -54,7 +54,7 @@ class JsonMapperService
 
         $result = [];
         foreach ($jsonObjectArray as $data) {
-            $result[] = (new $jsonMapperClassName())->fromJson($data);
+            $result[] = (new $jsonMapperClassName($this))->fromJson($data);
         }
 
         return $result;
@@ -74,7 +74,7 @@ class JsonMapperService
 
         $result = [];
         foreach ($objectArray as $data) {
-            $result[] = (new $jsonMapperClassName())->toJson($data);
+            $result[] = (new $jsonMapperClassName($this))->toJson($data);
         }
 
         return $result;
