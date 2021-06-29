@@ -27,7 +27,7 @@ class JsonMapperService
 
     /**
      * @param ImmutableObjectInterface|null $object
-     * @param string      $jsonMapperClassName
+     * @param string                        $jsonMapperClassName
      *
      * @return object|null
      */

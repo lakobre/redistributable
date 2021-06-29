@@ -10,6 +10,7 @@ class MethodBodyJsonMapper
 {
     /**
      * @param object $json
+     *
      * @return null
      */
     public function fromJson(object $json)
@@ -19,6 +20,7 @@ class MethodBodyJsonMapper
 
     /**
      * @param $methodBody
+     *
      * @return object
      */
     public function toJson($methodBody): object
