@@ -2,7 +2,7 @@
     "name": "lakobre/redistributable",
     "description": "Redistributable files for Lakobre.",
     "type": "library",
-    "license": "propriatery",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Constup",
