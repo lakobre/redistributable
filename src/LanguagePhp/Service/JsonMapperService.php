@@ -48,8 +48,11 @@ class JsonMapperService
      */
     public function fromJsonObjectArray(?array $jsonObjectArray, string $jsonMapperClassName): ?array
     {
-        if (empty($jsonObjectArray)) {
+        if (is_null($jsonObjectArray)) {
             return null;
+        }
+        if (empty($jsonObjectArray)) {
+            return [];
         }
 
         $result = [];
@@ -68,8 +71,11 @@ class JsonMapperService
      */
     public function toJsonObjectArray(?array $objectArray, string $jsonMapperClassName): ?array
     {
-        if (empty($objectArray)) {
+        if (is_null($objectArray)) {
             return null;
+        }
+        if (empty($objectArray)) {
+            return [];
         }
 
         $result = [];
